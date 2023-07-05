@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Google Advanced Search</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -17,27 +19,33 @@
         </nav>
     </header>
     <main>
-        <form action="https://www.google.com/advanced_search" method="get">
-            <div>
-                <label for="as_q">Containing all these words:</label>
-                <input type="text" id="all-words" name="as_q" placeholder="All words here"><!-- "as_q","as_epq">Get methodunun parametreleri-->
+        <section>
+            <div class="logo-container">
+                <img src="https://www.google.com.tr/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png"
+                    alt="Google_logo">
             </div>
-            <div>
-                <label for="as_epq">Containing this exact phrase:</label>
-                <input type="text" id="exact-pharse"
-                name="as_epq" placeholder="Exact pharse here">
-            </div>
-            <div>
-                <label for="any-words">Pages containing any of these words:</label>
-                <input type="text" id="any-words" name="as_oq" placeholder="Words here">
-            </div>
-            <div>
-                <label for="none-words">Find pages with none of these words:</label>
-                <input type="text" id="any_words" name="as_oq" placeholder="Words here">
-            </div>
-            <br>
-            <input type="submit" value="Google Advanced Search">
-        </form>
+            <form action="https://www.google.com/advanced_search" method="get">
+                <div>
+                    <label for="as_q">Containing all these words:</label>
+                    <input type="text" id="all-words" name="as_q"
+                        placeholder="All words here"><!-- "as_q","as_epq">Get methodunun parametreleri-->
+                </div>
+                <div>
+                    <label for="as_epq">Containing this exact phrase:</label>
+                    <input type="text" id="exact-pharse" name="as_epq" placeholder="Exact pharse here">
+                </div>
+                <div>
+                    <label for="any-words">Pages containing any of these words:</label>
+                    <input type="text" id="any-words" name="as_oq" placeholder="Words here">
+                </div>
+                <div>
+                    <label for="none-words">Find pages with none of these words:</label>
+                    <input type="text" id="any_words" name="as_oq" placeholder="Words here">
+                </div>
+                <input type="submit" value="Google Advanced Search">
+            </form>
+        </section>
     </main>
 </body>
+
 </html>
